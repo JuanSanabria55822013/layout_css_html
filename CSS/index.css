@@ -24,3 +24,23 @@
 .coloWhite{
     color: #fff;
 }
+
+.paginaPrincipal .contenido{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: calc(100vh - 300px);
+    justify-content: center;
+    align-items: center;
+}
+
+.contenido nav{
+    width: 200px;
+    background-color: #9a9a9a;
+    height: calc(100vh - 300px);
+}
+
+.contenido article{
+    width: calc(100% - 200px);
+    height: calc(100vh - 300px);
+}
