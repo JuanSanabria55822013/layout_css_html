@@ -173,7 +173,50 @@
             } 
             console.log(esMayorEdad2(25));
 
+            class Persona{
+                nombre = '';
+                apellido = '';
+                edad = 0;
+                email = '';
 
+                getNombreCompleto() {
+                    return this.nombre + ' ' + this.apellido ; 
+                }
+
+                esMayorEdad(){
+                    //     if(this.edad >= 18) {
+                    //         return 'Si';
+                    //     } else {
+                    //         return 'No';
+                    //     }
+                    // }
+                    return this.edad >= 18? 'Si' : 'No';
+                }
+            }    
+
+            let persona1 = new Persona();
+            persona1.nombre = 'Johan';
+            persona1.apellido = 'Fonseca';
+            persona1.edad = 30;
+
+            console.log('Nombre de la persona: ',persona1.getNombreCompleto());
+            console.log('¿Es mayor de edad?', persona1.esMayorEdad());
+
+            class Estudiante extends Persona{
+                codigo = '';
+                cantidadMaterias = 0;
+            }
+
+            class Docente extends Persona{
+                codigo = '';
+            }
+
+            let estudiante1 = new Estudiante();
+            estudiante1.nombre = 'Sebastián';
+            estudiante1.apellido = 'Sanabria';
+            estudiante1.codigo = '123456789';
+            estudiante1.cantidadMaterias = 8;
+            console.log('Nombre de la persona: ', estudiante1.getNombreCompleto())
         </script>
     </body>
 </html>
